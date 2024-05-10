@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.logo {
+    font-size: 24px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+.sidebar.active {
+    right: 0; /* Display when active */
+}
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Adjusted to be on the left side */
+    color: #fff;
+    cursor: pointer;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}

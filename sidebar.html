@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Sidebar</title>
+    <!-- Linking FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+       <link rel="stylesheet" href="/sidebar-01/sidebarstyle.css">
+      
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">bubble.ai</div>
+    <div class="menu">
+        <i class="fas fa-bars bars" onclick="toggleSidebar()"></i>
+    </div>
+</header>
+
+<div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="toggleSidebar()">
+        <i class="fas fa-times"></i>
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+
+<script src="/sidebar-01/sidebar.js">
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+    }
+
+</script>
+</body>
+</html>
